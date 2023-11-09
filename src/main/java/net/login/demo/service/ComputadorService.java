@@ -20,4 +20,8 @@ public class ComputadorService {
         return computadorRepository.findAll();
     }
 
+    public void deletar(Integer id){
+        computadorRepository.deleteById(id);
+    }
+
 }

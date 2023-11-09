@@ -21,8 +21,13 @@ public class ComputadorController {
     }
 
     @GetMapping
-
     public List<Computador> listarTodos() {
         return computadorService.listarTodos();
     }
+
+    @DeleteMapping("/{id}")
+    public void deletar(@PathVariable Integer id){
+        computadorService.deletar(id);
+    }
+
 }
