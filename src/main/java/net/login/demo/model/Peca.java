@@ -14,10 +14,10 @@ public class Peca {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    @Lob
-    private byte[] imagem;
+    private String imagem;
     private String link;
     private String nome;
-    private Integer quantidade;
     private Double preco;
+    private String tipo;
+
 }
