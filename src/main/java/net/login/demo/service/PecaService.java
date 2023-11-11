@@ -19,4 +19,8 @@ public class PecaService {
     public List<Peca> listarTodos() {
         return pecaRepository.findAll();
     }
+
+    public void deletar(Integer id) {
+        pecaRepository.deleteById(id);
+    }
 }

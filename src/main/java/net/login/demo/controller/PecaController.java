@@ -25,4 +25,9 @@ public class PecaController {
     public List<Peca> listarTodos() {
         return pecaService.listarTodos();
     }
+
+    @DeleteMapping("/{id}")
+    public void deletarPeca(@PathVariable Integer id) {
+        pecaService.deletar(id);
+    }
 }
